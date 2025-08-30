@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/montserrat/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebas_neue/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: "PFD";
+  src: url("../fonts/pfd/PFDinTextCompPro-Medium_0.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/helvetica_neue/HelveticaNeueLight.otf");
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  overflow-x: hidden;
+}
+
+body.dark {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  nav {
+    background-color: black;
+  }
+  .link--top,
+  .link--bottom {
+    color: white;
+  }
+}
