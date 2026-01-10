@@ -28,6 +28,11 @@
   src: url("../fonts/helvetica_neue/HelveticaNeueLight.otf");
 }
 
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswald/Oswald-Regular.ttf");
+}
+
 body {
   box-sizing: border-box;
   margin: 0;

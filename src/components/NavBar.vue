@@ -48,15 +48,16 @@ ul {
   align-items: center;
   margin: 0;
   gap: 2.5rem;
-  padding: 1.5rem 20rem;
+  padding: 1.2rem 20rem;
   .link {
     position: relative;
     display: inline-block;
-    line-height: 1em;
+    line-height: 1.25em;
   }
 
   .link--top {
-    font-family: "Montserrat Bold";
+    font-size: 1.1rem;
+    font-family: "Oswald";
     position: absolute;
     color: black;
     top: 0;
@@ -78,7 +79,8 @@ ul {
   }
 
   .link--bottom {
-    font-family: "Montserrat Bold";
+    font-size: 1.1rem;
+    font-family: "Oswald";
     display: inline-block;
     clip-path: polygon(0% 65%, 100% 40%, 100% 110%, 0% 110%);
     color: black;

@@ -68,9 +68,10 @@ onUnmounted(() => {
     position: absolute;
     z-index: 3;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     padding: 0 12rem;
+    font-family: "PFD";
   }
 }
 .first-slide {

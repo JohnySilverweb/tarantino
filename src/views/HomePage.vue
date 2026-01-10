@@ -40,15 +40,15 @@ export default {
     position: absolute;
     inset: 0;
     opacity: 0.1;
-    top: 6.5%;
-    bottom: -8.5%;
+    top: 6.3%;
+    bottom: -8.4%;
     pointer-events: none;
     background-image: url("@/assets/img/grain.webp");
   }
   .banana {
     position: absolute;
     width: 4.9vw;
-    left: 49.5%;
+    left: 51%;
     top: 67.7%;
     transform: rotate(-4deg);
     cursor: pointer;

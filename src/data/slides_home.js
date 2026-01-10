@@ -7,7 +7,7 @@ export const slides = [
 
   {
     id: 2,
-    head: "What is he known for?",
+    head: "Known for?",
     text: "He gained international recognition with Pulp Fiction (1994), which won the Palme d'Or at Cannes and an Oscar for Best Original Screenplay. His other notable films include Reservoir Dogs, Kill Bill, Inglourious Basterds, Django Unchained, and Once Upon a Time in Hollywood. Tarantino is known for writing his own scripts, referencing pop culture, and creating bold, unconventional characters.",
   },
 
