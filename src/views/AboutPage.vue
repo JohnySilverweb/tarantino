@@ -6,7 +6,7 @@
     :class="{ 'first-slide': i === 0, 'last-slide': i === slides.length - 1 }"
   >
     <div class="image" :style="getImage(slide)"></div>
-    <video src="@/assets/video/effect.mp4" autoplay loop muted></video>
+    <video src="/effect.mp4" autoplay loop muted playsinline=""></video>
     <p>{{ slide.description }}</p>
   </div>
   <img src="@/assets/img/about/overlay.webp" alt="" class="overlay" />
