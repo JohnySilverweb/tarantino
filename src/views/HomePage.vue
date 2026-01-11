@@ -1,6 +1,5 @@
 <template>
   <div class="bg">
-    <img class="banana" src="@/assets/img/home/banana.webp" alt="banana" @click="next('slide')" />
     <div class="top">
       <img src="@/assets/img/home/quote_symbol.webp" alt="quote symbol" @click="next('quote')" />
       <transition name="fade" mode="out-in">
@@ -10,7 +9,10 @@
     <h1>Quentin Tarantino</h1>
     <transition name="fade" mode="out-in">
       <div class="bottom" :key="slides[slide].head">
-        <h2>{{ slides[slide].head }}</h2>
+        <div class="bottom-top">
+          <img src="@/assets/img/home/question.webp" alt="question symbol" @click="next('slide')" />
+          <h2>{{ slides[slide].head }}</h2>
+        </div>
         <p>{{ slides[slide].text }}</p>
       </div>
     </transition>
@@ -33,24 +35,20 @@ export default {
 <style lang="scss" scoped>
 .bg {
   background-image: url("@/assets/img/home/background.webp");
-  width: 100vw;
-  height: 102vh;
+  position: relative;
+  width: 100%;
+  height: 100vh;
   &::before {
     content: "";
     position: absolute;
     inset: 0;
     opacity: 0.1;
-    top: 6.3%;
-    bottom: -8.4%;
     pointer-events: none;
     background-image: url("@/assets/img/grain.webp");
   }
-  .banana {
-    position: absolute;
-    width: 4.9vw;
-    left: 51%;
-    top: 67.7%;
-    transform: rotate(-4deg);
+  img {
+    width: 5rem;
+    height: 5rem;
     cursor: pointer;
     transition: filter 0.2s ease;
     filter: opacity(0.7);
@@ -68,8 +66,9 @@ export default {
       height: 5rem;
       cursor: pointer;
       transition: filter 0.2s ease;
+      filter: opacity(0.7);
       &:hover {
-        filter: drop-shadow(0 0 4px rgba(255, 217, 0, 0.8)) drop-shadow(0 0 4px rgba(255, 217, 0, 0.8));
+        filter: opacity(1) drop-shadow(0 0 4px rgba(255, 217, 0, 0.8)) drop-shadow(0 0 6px rgba(255, 217, 0, 0.8));
       }
     }
     .quote-1 {
@@ -81,7 +80,8 @@ export default {
     }
   }
   h1,
-  h2 {
+  h2,
+  .bottom p {
     font-family: "Bebas Neue";
     font-size: 5.5rem;
     width: 100%;
@@ -91,7 +91,16 @@ export default {
 
   .bottom {
     width: 40%;
-    margin: 5.5rem 0 0 7.5rem;
+    margin: 5.5rem 0 0 0;
+    .bottom-top {
+      display: flex;
+      align-items: center;
+      img {
+        width: 6rem;
+        height: 6rem;
+        margin: 0 1rem 1rem 0;
+      }
+    }
     h2 {
       margin: 0;
       font-size: 6rem;
