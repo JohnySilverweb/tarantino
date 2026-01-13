@@ -124,4 +124,10 @@ export default {
     opacity: 1;
   }
 }
+
+@media (width: 1280px) {
+  .bg {
+    width: 1280px;
+  }
+}
 </style>
