@@ -7,15 +7,15 @@
       </transition>
     </div>
     <h1>Quentin Tarantino</h1>
-    <transition name="fade" mode="out-in">
-      <div class="bottom" :key="slides[slide].head">
-        <div class="bottom-top">
-          <img src="@/assets/img/home/question.webp" alt="question symbol" @click="next('slide')" />
+    <div class="bottom">
+      <img src="@/assets/img/home/question.webp" alt="question symbol" @click="next('slide')" />
+      <transition name="fade" mode="out-in">
+        <div class="bottom-info" :key="slides[slide].head">
           <h2>{{ slides[slide].head }}</h2>
+          <p>{{ slides[slide].text }}</p>
         </div>
-        <p>{{ slides[slide].text }}</p>
-      </div>
-    </transition>
+      </transition>
+    </div>
   </div>
 </template>
 <script>
@@ -80,8 +80,7 @@ export default {
     }
   }
   h1,
-  h2,
-  .bottom p {
+  h2 {
     font-family: "Bebas Neue";
     font-size: 5.5rem;
     width: 100%;
@@ -90,16 +89,13 @@ export default {
   }
 
   .bottom {
-    width: 40%;
+    width: 45%;
     margin: 5.5rem 0 0 0;
-    .bottom-top {
-      display: flex;
-      align-items: center;
-      img {
-        width: 6rem;
-        height: 6rem;
-        margin: 0 1rem 1rem 0;
-      }
+    display: flex;
+    img {
+      width: 6rem;
+      height: 6rem;
+      margin: 0 1rem 1rem 0;
     }
     h2 {
       margin: 0;

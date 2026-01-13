@@ -37,9 +37,9 @@ function getImage(card) {
 .content {
   position: relative;
   width: 100vw;
-  height: 195vh;
+  // height: 195vh;
+  // background-size: cover;
   background: linear-gradient(to bottom, #3e0f0f 30%, #8b1c1c 50%, #3e0f0f 100%);
-  background-size: cover;
   &::before {
     content: "";
     position: absolute;
@@ -69,7 +69,7 @@ img {
   position: relative;
   opacity: 0.8;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
-  z-index: 1;
+  z-index: 999;
 }
 
 .cards {

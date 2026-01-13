@@ -9,7 +9,7 @@
     <video src="/video/effect.mp4" autoplay loop muted playsinline=""></video>
     <p>{{ slide.description }}</p>
   </div>
-  <img src="@/assets/img/about/overlay.webp" alt="" class="overlay" />
+  <img src="@/assets/img/about/overlay.webp" class="overlay" />
 </template>
 
 <script setup>
@@ -86,5 +86,7 @@ onUnmounted(() => {
   inset: 0;
   z-index: 4;
   pointer-events: none;
+  width: 100%;
+  height: 100%;
 }
 </style>
