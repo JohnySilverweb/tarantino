@@ -35,6 +35,7 @@ export default {
 <style lang="scss" scoped>
 .bg {
   background-image: url("@/assets/img/home/background.webp");
+  background-size: cover;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -61,16 +62,6 @@ export default {
     gap: 2rem;
     width: 45%;
     padding: 9rem 0 0 1rem;
-    img {
-      width: 5rem;
-      height: 5rem;
-      cursor: pointer;
-      transition: filter 0.2s ease;
-      filter: opacity(0.7);
-      &:hover {
-        filter: opacity(1) drop-shadow(0 0 4px rgba(255, 217, 0, 0.8)) drop-shadow(0 0 6px rgba(255, 217, 0, 0.8));
-      }
-    }
     .quote-1 {
       font-family: "PFD";
       font-size: 4.5rem;
@@ -119,15 +110,83 @@ export default {
   &-leave-to {
     opacity: 0;
   }
+  quote-1 {
+    font-family: "PFD";
+    font-size: 4.5rem;
+    margin: 0;
+    line-height: 1;
+    color: rgb(243, 209, 116);
+  }
   &-enter-to,
   &-leave-from {
     opacity: 1;
   }
 }
 
-@media (width: 1280px) {
+@media (min-width: 1280px) and (max-width: 1500px) {
   .bg {
-    width: 1280px;
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+    .top {
+      padding: 4rem 0 0 1rem;
+      .quote-1 {
+        font-size: 3rem;
+      }
+    }
+    h1 {
+      font-size: 4.5rem;
+      margin: 1rem 0 0 7rem;
+    }
+
+    .bottom {
+      img {
+        width: 4rem;
+        height: 4rem;
+        margin: 0 1rem 1rem 1.5rem;
+      }
+      h2 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 1840px) {
+  .bg {
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+    .top {
+      padding: 4rem 0 0 1rem;
+      .quote-1 {
+        font-size: 3.5rem;
+      }
+    }
+    h1 {
+      font-size: 5.5rem;
+      margin: 1rem 0 0 7rem;
+    }
+
+    .bottom {
+      margin-top: 10rem;
+      img {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 1rem 1rem 1.5rem;
+      }
+      h2 {
+        font-size: 5.5rem;
+      }
+      p {
+        font-size: 1.7rem;
+      }
+    }
   }
 }
 </style>
