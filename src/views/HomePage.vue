@@ -156,7 +156,7 @@ export default {
   }
 }
 
-@media (min-width: 1501px) and (max-width: 1840px) {
+@media (max-width: 1600px) {
   .bg {
     img {
       width: 5rem;
