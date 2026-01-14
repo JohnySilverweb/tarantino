@@ -124,7 +124,7 @@ export default {
       width: 0;
     }
     to {
-      width: auto;
+      width: 90vw;
     }
   }
 }
