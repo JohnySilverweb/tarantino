@@ -44,16 +44,16 @@ export default {
     white-space: nowrap;
     display: inline-block;
     border-right: 10px solid red;
-    animation: typing 7s steps(70, end) both, blink-caret 0.5s step-end infinite;
+    animation: typing 3s steps(32, end) both, blink-caret 0.5s step-end infinite;
   }
 }
 
 @keyframes typing {
   from {
-    max-width: 0;
+    width: 0;
   }
   to {
-    max-width: 90vw;
+    width: 28%;
   }
 }
 @keyframes blink-caret {
@@ -108,6 +108,17 @@ export default {
         transform: scale(1.1);
         box-shadow: 0 0 25px white;
       }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: auto;
     }
   }
 }
