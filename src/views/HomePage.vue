@@ -163,7 +163,7 @@ export default {
       height: 5rem;
     }
     .top {
-      padding: 4rem 0 0 1rem;
+      padding: 3rem 0 0 1rem;
       .quote-1 {
         font-size: 3.5rem;
       }
@@ -174,7 +174,7 @@ export default {
     }
 
     .bottom {
-      margin-top: 10rem;
+      margin-top: 6rem;
       img {
         width: 5rem;
         height: 5rem;
@@ -184,7 +184,8 @@ export default {
         font-size: 5.5rem;
       }
       p {
-        font-size: 1.7rem;
+        font-size: 1rem;
+        margin: 0;
       }
     }
   }
