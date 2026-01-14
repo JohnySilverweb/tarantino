@@ -89,4 +89,10 @@ onUnmounted(() => {
   width: 100%;
   height: 100%;
 }
+
+@media (max-width: 1600px) {
+  .slide p {
+    font-size: 1.5rem;
+  }
+}
 </style>
