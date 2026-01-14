@@ -144,7 +144,7 @@ export default {
       img {
         width: 4rem;
         height: 4rem;
-        margin: 0 1rem 1rem 1.5rem;
+        margin: 5.5rem 0 0 0;
       }
       h2 {
         font-size: 4rem;
@@ -185,7 +185,7 @@ export default {
           font-size: 5.5rem;
         }
         p {
-          font-size: 1rem;
+          font-size: 1.5rem;
           margin: 0;
         }
       }
