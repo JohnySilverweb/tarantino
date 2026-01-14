@@ -130,10 +130,10 @@ export default {
 
   ul {
     margin-bottom: 0;
-    li a {
-      width: 40px;
-      height: 40px;
-    }
+  }
+  li a {
+    width: 40px;
+    height: 40px;
   }
 }
 </style>
