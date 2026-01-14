@@ -115,6 +115,9 @@ export default {
 @media (max-width: 1600px) {
   .typewriter {
     height: 60vh;
+    h1 {
+      font-size: 1.5rem;
+    }
   }
   @keyframes typing {
     from {
