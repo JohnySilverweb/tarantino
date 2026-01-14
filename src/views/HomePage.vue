@@ -159,22 +159,22 @@ export default {
 @media (max-width: 1600px) {
   .bg {
     img {
-      width: 5rem;
-      height: 5rem;
+      width: 4rem;
+      height: 4rem;
     }
     .top {
       padding: 3rem 0 0 1rem;
       .quote-1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
     }
     h1 {
-      font-size: 5rem;
+      font-size: 4.5rem;
       margin: 1rem 0 0 7.5rem;
     }
 
     .bottom {
-      margin-top: 6rem;
+      margin-top: 5rem;
       img {
         width: 5rem;
         height: 5rem;
@@ -182,7 +182,7 @@ export default {
       }
       .bottom-info {
         h2 {
-          font-size: 5.5rem;
+          font-size: 4.5rem;
         }
         p {
           font-size: 1.3rem;
