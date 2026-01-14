@@ -127,5 +127,13 @@ export default {
       width: 31%;
     }
   }
+
+  ul {
+    margin-bottom: 0;
+    li a {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
 </style>
