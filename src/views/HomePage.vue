@@ -180,12 +180,14 @@ export default {
         height: 5rem;
         margin: 0 1rem 1rem 1.5rem;
       }
-      h2 {
-        font-size: 5.5rem;
-      }
-      p {
-        font-size: 1rem;
-        margin: 0;
+      .bottom-info {
+        h2 {
+          font-size: 5.5rem;
+        }
+        p {
+          font-size: 1rem;
+          margin: 0;
+        }
       }
     }
   }
