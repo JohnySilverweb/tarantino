@@ -114,7 +114,7 @@ export default {
 
 @media (max-width: 1600px) {
   .typewriter {
-    height: 60vh;
+    height: 70vh;
     h1 {
       font-size: 1.5rem;
     }
@@ -124,7 +124,7 @@ export default {
       width: 0;
     }
     to {
-      width: 31%;
+      width: 32%;
     }
   }
 
@@ -133,6 +133,9 @@ export default {
     li a {
       width: 40px;
       height: 40px;
+      i {
+        font-size: 24px;
+      }
     }
   }
 }
