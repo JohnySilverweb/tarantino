@@ -38,24 +38,22 @@ export default {
   align-items: start;
   height: 80vh;
   h1 {
-    width: auto;
     color: white;
     align-self: center;
     overflow: hidden;
-    margin: 0 auto;
     white-space: nowrap;
     display: inline-block;
     border-right: 10px solid red;
-    animation: typing 3s steps(32, end) both, blink-caret 0.5s step-end infinite;
+    animation: typing 7s steps(70, end) both, blink-caret 0.5s step-end infinite;
   }
 }
 
 @keyframes typing {
   from {
-    width: 0;
+    max-width: 0;
   }
   to {
-    width: 28%;
+    max-width: 90vw;
   }
 }
 @keyframes blink-caret {
