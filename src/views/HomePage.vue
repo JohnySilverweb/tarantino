@@ -123,7 +123,7 @@ export default {
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1500px) {
+@media (min-width: 1279px) and (max-width: 1500px) {
   .bg {
     img {
       width: 4rem;
@@ -169,8 +169,8 @@ export default {
       }
     }
     h1 {
-      font-size: 5.5rem;
-      margin: 1rem 0 0 7rem;
+      font-size: 5rem;
+      margin: 1rem 0 0 7.5rem;
     }
 
     .bottom {
