@@ -163,7 +163,7 @@ export default {
       height: 4rem;
     }
     .top {
-      padding: 3rem 0 0 1rem;
+      padding: 4rem 0 0 1rem;
       .quote-1 {
         font-size: 2.5rem;
       }
