@@ -173,7 +173,7 @@ export default {
     }
 
     .bottom {
-      margin-top: 5.5rem;
+      margin-top: 6rem;
       img {
         width: 5rem;
         height: 5rem;
@@ -184,7 +184,7 @@ export default {
           font-size: 4.5rem;
         }
         p {
-          font-size: 1.1rem;
+          font-size: 1rem;
           margin: 0;
         }
       }
