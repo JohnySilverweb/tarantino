@@ -170,22 +170,21 @@ export default {
     }
     h1 {
       font-size: 4.5rem;
-      margin: 1rem 0 0 7.5rem;
     }
 
     .bottom {
-      margin-top: 5rem;
+      margin-top: 5.5rem;
       img {
         width: 5rem;
         height: 5rem;
-        margin: 0 1rem 1rem 1.5rem;
+        margin: 0 1rem 1rem 1rem;
       }
       .bottom-info {
         h2 {
           font-size: 4.5rem;
         }
         p {
-          font-size: 1.3rem;
+          font-size: 1.1rem;
           margin: 0;
         }
       }
