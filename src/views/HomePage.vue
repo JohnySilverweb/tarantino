@@ -123,6 +123,39 @@ export default {
   }
 }
 
+@media (max-width: 1366px) {
+  .bg {
+    img {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    .top {
+      .quote-1 {
+        font-size: 2.2rem;
+      }
+    }
+    h1 {
+      font-size: 4rem;
+    }
+
+    .bottom {
+      margin-top: 4rem;
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
+      .bottom-info {
+        h2 {
+          font-size: 4rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1600px) {
   .bg {
     img {
@@ -153,39 +186,6 @@ export default {
         p {
           font-size: 1.1rem;
           margin: 0;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1366px) {
-  .bg {
-    img {
-      width: 3.5rem;
-      height: 3.5rem;
-    }
-    .top {
-      .quote-1 {
-        font-size: 2.2rem;
-      }
-    }
-    h1 {
-      font-size: 4rem;
-    }
-
-    .bottom {
-      margin-top: 4rem;
-      img {
-        width: 4rem;
-        height: 4rem;
-      }
-      .bottom-info {
-        h2 {
-          font-size: 4rem;
-        }
-        p {
-          font-size: 0.9rem;
         }
       }
     }
