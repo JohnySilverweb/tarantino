@@ -192,36 +192,36 @@ export default {
   }
 }
 
-@media (max-width: 1280px) {
-  .bg {
-    img {
-      width: 4rem;
-      height: 4rem;
-    }
-    .top {
-      padding: 4rem 0 0 1rem;
-      .quote-1 {
-        font-size: 3rem;
-      }
-    }
-    h1 {
-      font-size: 4.5rem;
-      margin: 1rem 0 0 7rem;
-    }
+// @media (max-width: 1280px) {
+//   .bg {
+//     img {
+//       width: 4rem;
+//       height: 4rem;
+//     }
+//     .top {
+//       padding: 4rem 0 0 1rem;
+//       .quote-1 {
+//         font-size: 3rem;
+//       }
+//     }
+//     h1 {
+//       font-size: 4.5rem;
+//       margin: 1rem 0 0 7rem;
+//     }
 
-    .bottom {
-      img {
-        width: 4rem;
-        height: 4rem;
-        margin: 5.5rem 0 0 0;
-      }
-      h2 {
-        font-size: 4rem;
-      }
-      p {
-        font-size: 1.4rem;
-      }
-    }
-  }
-}
+//     .bottom {
+//       img {
+//         width: 4rem;
+//         height: 4rem;
+//         margin: 5.5rem 0 0 0;
+//       }
+//       h2 {
+//         font-size: 4rem;
+//       }
+//       p {
+//         font-size: 1.4rem;
+//       }
+//     }
+//   }
+// }
 </style>
