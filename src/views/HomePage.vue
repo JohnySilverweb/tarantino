@@ -123,39 +123,6 @@ export default {
   }
 }
 
-@media (max-width: 1280px) {
-  .bg {
-    img {
-      width: 4rem;
-      height: 4rem;
-    }
-    .top {
-      padding: 4rem 0 0 1rem;
-      .quote-1 {
-        font-size: 3rem;
-      }
-    }
-    h1 {
-      font-size: 4.5rem;
-      margin: 1rem 0 0 7rem;
-    }
-
-    .bottom {
-      img {
-        width: 4rem;
-        height: 4rem;
-        margin: 5.5rem 0 0 0;
-      }
-      h2 {
-        font-size: 4rem;
-      }
-      p {
-        font-size: 1.4rem;
-      }
-    }
-  }
-}
-
 @media (max-width: 1600px) {
   .bg {
     img {
@@ -184,9 +151,75 @@ export default {
           font-size: 4.5rem;
         }
         p {
-          font-size: 1rem;
+          font-size: 1.1rem;
           margin: 0;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .bg {
+    img {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    .top {
+      .quote-1 {
+        font-size: 2.2rem;
+      }
+    }
+    h1 {
+      font-size: 4rem;
+    }
+
+    .bottom {
+      margin-top: 4rem;
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
+      .bottom-info {
+        h2 {
+          font-size: 4rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .bg {
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+    .top {
+      padding: 4rem 0 0 1rem;
+      .quote-1 {
+        font-size: 3rem;
+      }
+    }
+    h1 {
+      font-size: 4.5rem;
+      margin: 1rem 0 0 7rem;
+    }
+
+    .bottom {
+      img {
+        width: 4rem;
+        height: 4rem;
+        margin: 5.5rem 0 0 0;
+      }
+      h2 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.4rem;
       }
     }
   }
