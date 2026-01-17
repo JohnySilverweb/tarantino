@@ -126,7 +126,7 @@ function showPlayer(id) {
 }
 
 @media (max-width: 1600px) {
-  .overlay .info {
+  .poster .overlay .info {
     img {
       width: 23rem;
       height: 7rem;
