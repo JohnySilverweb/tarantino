@@ -123,7 +123,7 @@ export default {
   }
 }
 
-@media (max-width: 1600px) {
+@media (min-width: 1367px) and (max-width: 1600px) {
   .bg {
     img {
       width: 4rem;
@@ -159,7 +159,7 @@ export default {
   }
 }
 
-@media (max-width: 1367px) {
+@media (min-width: 1281px) and (max-width: 1366px) {
   .bg {
     img {
       width: 3.5rem;
