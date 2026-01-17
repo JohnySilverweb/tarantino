@@ -77,7 +77,8 @@ img {
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 0 20rem;
+  place-items: center;
+  margin: 0 15%;
 }
 
 .card {
@@ -136,5 +137,12 @@ img {
   transform: translateY(100%);
   opacity: 0;
   pointer-events: none;
+}
+
+@media (max-width: 1600px) {
+  .cards .card {
+    width: 13rem;
+    height: 20rem;
+  }
 }
 </style>
