@@ -126,19 +126,21 @@ function showPlayer(id) {
 }
 
 @media (max-width: 1600px) {
-  img {
-    width: 23rem;
-    height: 7rem;
-  }
+  .info {
+    img {
+      width: 23rem;
+      height: 7rem;
+    }
 
-  p {
-    font-size: 1.3rem;
-  }
+    p {
+      font-size: 1.3rem;
+    }
 
-  .btn-1,
-  .btn-2 {
-    font-size: 1.1rem;
-    padding: 15px 30px;
+    .btn-1,
+    .btn-2 {
+      font-size: 1.1rem;
+      padding: 15px 30px;
+    }
   }
 }
 </style>
