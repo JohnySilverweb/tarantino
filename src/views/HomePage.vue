@@ -32,7 +32,7 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .bg {
   background-image: url("@/assets/img/home/background.webp");
   background-size: cover;
