@@ -70,7 +70,7 @@ function showPlayer(id) {
     height: 100vh;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.99) 25%, rgba(0, 0, 0, 0) 100%);
     .info {
-      width: 35rem;
+      width: 33%;
       margin-left: 5rem;
       img {
         width: 33rem;
@@ -122,6 +122,23 @@ function showPlayer(id) {
       object-fit: contain !important;
       background: black;
     }
+  }
+}
+
+@media (max-width: 1600px) {
+  img {
+    width: 23rem;
+    height: 7rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .btn-1,
+  .btn-2 {
+    font-size: 1.1rem;
+    padding: 15px 30px;
   }
 }
 </style>

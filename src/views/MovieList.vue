@@ -140,9 +140,16 @@ img {
 }
 
 @media (max-width: 1600px) {
+  img {
+    width: 40rem;
+    height: 15rem;
+  }
   .cards .card {
     width: 13rem;
     height: 20rem;
+    .info {
+      font-size: 10px;
+    }
   }
 }
 </style>

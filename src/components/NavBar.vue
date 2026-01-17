@@ -48,7 +48,7 @@ ul {
   align-items: center;
   margin: 0;
   gap: 2.5rem;
-  padding: 1.2rem 20rem;
+  padding: 1.2rem 17%;
   .link {
     position: relative;
     display: inline-block;
@@ -123,6 +123,16 @@ ul {
       top: 65%;
       transform-origin: left top;
       transform: rotateZ(-2.1deg) scaleX(100%);
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  ul {
+    padding: 1.2rem 17%;
+    .link--top,
+    .link--bottom {
+      font-size: 0.9rem;
     }
   }
 }
