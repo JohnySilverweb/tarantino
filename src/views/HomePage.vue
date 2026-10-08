@@ -1,0 +1,226 @@
+<template>
+  <div class="bg">
+    <div class="top">
+      <img src="@/assets/img/home/quote_symbol.webp" alt="quote symbol" @click="next('quote')" />
+      <div class="quote-container">
+        <transition name="fade" mode="out-in">
+          <p class="quote-1" :key="quotes[quote].id">{{ quotes[quote].text }}</p>
+        </transition>
+        <h1>Quentin Tarantino</h1>
+      </div>
+    </div>
+    <div class="bottom">
+      <img src="@/assets/img/home/question.webp" alt="question symbol" @click="next('slide')" />
+      <transition name="fade" mode="out-in">
+        <div class="bottom-info" :key="slides[slide].head">
+          <h2>{{ slides[slide].head }}</h2>
+          <p>{{ slides[slide].text }}</p>
+        </div>
+      </transition>
+    </div>
+  </div>
+</template>
+<script>
+import { quotes } from "@/data/quotes.js";
+import { slides } from "@/data/slides_home.js";
+export default {
+  data() {
+    return { quotes, quote: 0, slides, slide: 0 };
+  },
+  methods: {
+    next(type) {
+      this[type] = (this[type] + 1) % this[`${type}s`].length;
+    },
+  },
+};
+</script>
+<style lang="scss" scoped>
+.bg {
+  background-image: url("@/assets/img/home/background.webp");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+    pointer-events: none;
+    background-image: url("@/assets/img/grain.webp");
+  }
+  img {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+    filter: opacity(0.7);
+    &:hover {
+      filter: opacity(1) drop-shadow(0 0 4px rgba(255, 217, 0, 0.8)) drop-shadow(0 0 6px rgba(255, 217, 0, 0.8));
+    }
+  }
+  .top {
+    display: flex;
+    gap: 2rem;
+    width: 45%;
+    padding-left: 1rem;
+    height: 50%;
+    align-items: center;
+    .quote-1 {
+      font-family: "PFD";
+      font-size: 4.5rem;
+      margin: 0;
+      line-height: 1;
+      color: rgb(243, 209, 116);
+    }
+  }
+  h1,
+  h2 {
+    font-family: "Bebas Neue";
+    font-size: 5.5rem;
+    width: 100%;
+    color: rgb(253, 172, 3);
+    /* margin: 0 0 0 95px; */
+    margin: 0;
+  }
+
+  .bottom {
+    width: 45%;
+    display: flex;
+    height: 50%;
+    align-items: center;
+    img {
+      width: 6rem;
+      height: 6rem;
+      margin-right: 35px;
+    }
+    h2 {
+      margin: 0;
+      font-size: 6rem;
+    }
+    p {
+      font-family: "Roboto";
+      color: white;
+      font-size: 1.8rem;
+      margin-top: 0;
+    }
+  }
+}
+
+.fade {
+  &-enter-active,
+  &-leave-active {
+    transition: opacity 0.4s;
+  }
+  &-enter-from,
+  &-leave-to {
+    opacity: 0;
+  }
+  &-enter-to,
+  &-leave-from {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1600px) {
+  .bg {
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+    .top {
+      padding: 3rem 0 0 1rem;
+      .quote-1 {
+        font-size: 2.5rem;
+      }
+    }
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    .bottom {
+      margin-top: 6rem;
+      img {
+        width: 5rem;
+        height: 5rem;
+        margin: 0 1rem 1rem 1rem;
+      }
+      .bottom-info {
+        h2 {
+          font-size: 4.5rem;
+        }
+        p {
+          font-size: 1.1rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .bg {
+    img {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    .top {
+      .quote-1 {
+        font-size: 2.2rem;
+      }
+    }
+    h1 {
+      font-size: 4rem;
+    }
+
+    .bottom {
+      margin-top: 4rem;
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
+      .bottom-info {
+        h2 {
+          font-size: 4rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 1280px) {
+//   .bg {
+//     img {
+//       width: 4rem;
+//       height: 4rem;
+//     }
+//     .top {
+//       padding: 4rem 0 0 1rem;
+//       .quote-1 {
+//         font-size: 3rem;
+//       }
+//     }
+//     h1 {
+//       font-size: 4.5rem;
+//       margin: 1rem 0 0 7rem;
+//     }
+
+//     .bottom {
+//       img {
+//         width: 4rem;
+//         height: 4rem;
+//         margin: 5.5rem 0 0 0;
+//       }
+//       h2 {
+//         font-size: 4rem;
+//       }
+//       p {
+//         font-size: 1.4rem;
+//       }
+//     }
+//   }
+// }
+</style>
