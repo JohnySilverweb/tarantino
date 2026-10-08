@@ -1,24 +1,18 @@
-# tarantino
+```md
+# Tarantino
 
-## Project setup
-```
+Frontend website about Quentin Tarantino's movies.
+
+## Technologies
+
+- Vue 3
+- Vite
+- JavaScript
+- CSS
+
+## Run locally
+
+Install dependencies:
+
+```bash
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
